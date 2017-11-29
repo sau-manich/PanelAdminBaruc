@@ -1,0 +1,199 @@
+<!--Si algo quieres cambiar, añadir o eliminar haslo con cuidado,
+sacate una copia y pegalo en otro lado por si no sabes como volver-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pones titulo de la pestaña del navegador</title>
+<link href="css/bootstrap.css" rel="stylesheet" type='text/css' />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+<!----Calendario -------->
+  <link rel="stylesheet" href="css/clndr.css" type="text/css" />
+  <script src="js/underscore-min.js"></script>
+  <script src= "js/moment-2.2.1.js"></script>
+  <script src="js/clndr.js"></script>
+  <script src="js/site.js"></script>
+<!----Fin Calendario -------->
+
+					
+</head>
+<body>
+	<div class="total-content">
+		<div class="col-md-3 side-bar">
+			<div class="logo text-center">
+				<a href="#"><img src="images/logo.png" alt="" /></a>
+			</div>
+			<div class="navigation">
+				<h3>Pones un titulo</h3>
+				<ul>
+					<li><a href="#"><i class="chat"></i></a></li>
+					<li><a href="#">Pones lo que decees</a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><i class="art"></i></a></li>
+					<li><a href="#">Pones lo que decees</a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><i class="user"></i></a></li>
+					<li><a href="#">Pones lo que decees</a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><i class="fat"></i></a></li>
+					<li><a href="#">Pones lo que decees</a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><i class="speed"></i></a></li>
+					<li><a href="#">Pones lo que decees</a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><i class="setting"></i></a></li>
+					<li><a href="#">Pones lo que decees</a></li>
+				</ul>
+			</div>
+			<div class="navigation1">
+				<h3>Pones un titulo</h3>
+				<ul>
+					<li><a href="#"><i class="dash"></i></a></li>
+					<li><a href="#">Pones lo que decees</a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><i class="mail"></i></a></li>
+					<li><a href="#">Pones lo que decees</a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><i class="cal"></i></a></li>
+					<li><a href="#">Pones lo que decees</a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><i class="page"></i></a></li>
+					<li><a href="#">Pones lo que decees</a></li>
+				</ul>
+			</div>
+			
+		</div>
+		<div class="col-md-9 content">
+			<div class="home-strip">
+				
+				<div class="search">
+					<div class="search2">
+					  <form>
+						<input type="submit" value="">
+						 <input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}"/>
+					  </form>
+					</div>
+				</div>
+				<div class="member">
+					<p><a href="#"><i class="men"></i></a><a href="#">Baruc</a></p>
+					<div id="dd" class="wrapper-dropdown-2" tabindex="1"><span><img src="images/settings.png"/></span>
+							<ul class="dropdown">
+							
+									<li><a href="#">Ver Perfil </a></li>
+									<li><a href="#">Poner algo</a></li>
+									<li><a href="#">Poner algo</a></li>
+									<li><a href="#">Poner algo</a></li>
+									<li><a href="#">Poner algo</a></li>
+									<li><a href="#">Salir</a></li>
+							</ul>
+					</div>
+			<!--para las opciones de usuario -->
+			<script type="text/javascript">
+							function DropDown(el) {
+								this.dd = el;
+								this.initEvents();
+							}
+							DropDown.prototype = {
+								initEvents : function() {
+									var obj = this;
+				
+									obj.dd.on('click', function(event){
+										$(this).toggleClass('active');
+										event.stopPropagation();
+									});	
+								}
+							}
+							$(function() {
+				
+								var dd = new DropDown( $('#dd') );
+				
+								$(document).click(function() {
+									
+									$('.wrapper-dropdown-2').removeClass('active');
+								});
+				
+							});
+			</script>
+			<div class="clearfix"></div>			
+			</div>
+			<div class="clearfix"></div>
+			</div><br>
+			<div class="clearfix"></div>
+			<p class="home"><a href="#">Home</a> > <strong>  Pagina Siguiente</strong></p>
+			<br>
+			
+			<div class="calenders">
+				<div class="calender-auto">
+				<div class="alert-close1"> </div>
+				<h3>Calendario</h3>
+					<div class="column_right_grid calender">
+                      <div class="cal1"><div class="clndr"><div class="clndr-controls"><div class="clndr-control-button"><p class="clndr-previous-button">previous</p></div>
+                      <div class="month">March 2014</div><div class="clndr-control-button rightalign"></div></div>
+                      <table class="clndr-table" border="0" cellspacing="0" cellpadding="0"><thead><tr class="header-days">
+                      	<td class="header-day">Sun</td><td class="header-day">Mon</td><td class="header-day">Tu</td><td class="header-day">We</td><td class="header-day">T</td>
+                      	<td class="header-day">Fr</td><td class="header-day">Su</td></tr></thead><tbody><tr><td class="day past adjacent-month last-month calendar-day-2014-02-23">
+                      	<div class="day-contents">23</div></td><td class="day past adjacent-month last-month calendar-day-2014-02-24"><div class="day-contents">24</div></td>
+                      	<td class="day past adjacent-month last-month calendar-day-2014-02-25"><div class="day-contents">25</div></td>
+                      	<td class="day past adjacent-month last-month calendar-day-2014-02-26"><div class="day-contents">26</div></td>
+						  <td class="day past adjacent-month last-month calendar-day-2014-02-27"><div class="day-contents">27</div></td>
+
+						  <td class="day past adjacent-month last-month calendar-day-2014-02-28"><div class="day-contents">28</div></td>
+						  <td class="day past calendar-day-2014-03-01"><div class="day-contents">1</div></td></tr><tr>
+							  <td class="day past calendar-day-2014-03-02"><div class="day-contents">2</div></td>
+							  <td class="day past calendar-day-2014-03-03"><div class="day-contents">3</div></td>
+							  <td class="day past calendar-day-2014-03-04"><div class="day-contents">4</div></td>
+							  <td class="day past calendar-day-2014-03-05"><div class="day-contents">5</div></td>
+							  <td class="day past calendar-day-2014-03-06"><div class="day-contents">6</div></td>
+							  <td class="day past calendar-day-2014-03-07"><div class="day-contents">7</div></td>
+							  <td class="day past calendar-day-2014-03-08"><div class="day-contents">8</div></td></tr><tr>
+								  <td class="day past calendar-day-2014-03-09"><div class="day-contents">9</div></td>
+								  <td class="day past event calendar-day-2014-03-10"><div class="day-contents">10</div></td>
+								  <td class="day past event calendar-day-2014-03-11"><div class="day-contents">11</div></td>
+								  <td class="day past event calendar-day-2014-03-12"><div class="day-contents">12</div></td>
+								  <td class="day past event calendar-day-2014-03-13"><div class="day-contents">13</div></td>
+								  <td class="day past event calendar-day-2014-03-14"><div class="day-contents">14</div></td>
+								  <td class="day past calendar-day-2014-03-15"><div class="day-contents">15</div></td></tr><tr>
+									  <td class="day past calendar-day-2014-03-16"><div class="day-contents">16</div></td>
+									  <td class="day past calendar-day-2014-03-17"><div class="day-contents">17</div></td>
+									  <td class="day past calendar-day-2014-03-18"><div class="day-contents">18</div></td>
+									  <td class="day past calendar-day-2014-03-19"><div class="day-contents">19</div></td>
+									  <td class="day past calendar-day-2014-03-20"><div class="day-contents">20</div></td>
+									  <td class="day past event calendar-day-2014-03-21"><div class="day-contents">21</div></td>
+									  <td class="day past event calendar-day-2014-03-22"><div class="day-contents">22</div></td></tr><tr>
+										  <td class="day past event calendar-day-2014-03-23"><div class="day-contents">23</div></td>
+										  <td class="day past calendar-day-2014-03-24"><div class="day-contents">24</div></td>
+										  <td class="day today calendar-day-2014-03-25"><div class="day-contents">25</div></td>
+										  <td class="day calendar-day-2014-03-26"><div class="day-contents">26</div></td>
+										  <td class="day calendar-day-2014-03-27"><div class="day-contents">27</div></td>
+										  <td class="day calendar-day-2014-03-28"><div class="day-contents">28</div></td>
+										  <td class="day calendar-day-2014-03-29"><div class="day-contents">29</div></td></tr><tr>
+											  <td class="day calendar-day-2014-03-30"><div class="day-contents">30</div></td>
+											  <td class="day calendar-day-2014-03-31"><div class="day-contents">31</div></td>
+											 </tr></tbody></table></div></div>
+				     </div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="footer">
+			<div class="copyright text-center">
+					<p>&copy; 2017 Baruc - Wilmer | <a href="ponen el link de su grupo de estructura o algo o sino no ponen nada">  Estructura de datos 1</a></p>
+			</div>		
+		</div>
+</body>
+</html>
